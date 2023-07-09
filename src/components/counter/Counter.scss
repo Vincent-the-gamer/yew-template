@@ -1,0 +1,23 @@
+p{
+    position: relative;
+    margin: 40px auto;
+    width: fit-content;
+    button{
+        background-color: rgba(0, 0, 0, 0.757);
+        color: white;
+        font-family: DM Mono;
+        height: 45px;
+        border: 3px solid yellow;
+        border-radius: 6px;
+        font-size: 15px;
+        transition: all, 0.2s;
+        &:hover{
+            background-color: aquamarine;
+            color: black;
+            cursor: pointer;
+        }
+        &:active{
+            transform: scale(103%, 103%);
+        }
+    }
+}

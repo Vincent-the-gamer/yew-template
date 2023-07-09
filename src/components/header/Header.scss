@@ -1,0 +1,43 @@
+header{
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.509);
+    top: 0;
+    left: 0;
+    color: white;
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    img{
+        position: relative;
+        height: 100%;
+        display: inline;
+    }
+    h1{
+        position: relative;
+        top: -15px;
+        left: 5px;
+        display: inline;
+    }
+    button{
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 120px;
+        background-color: transparent;
+        border: 2px solid deepskyblue;
+        border-radius: 5px;
+        color: white;
+        font-family: DM Mono;
+        font-size: 25px;
+        transition: all, 0.3s;
+        &:hover{
+            background-color: aqua;
+            border: 2px solid yellow;
+            cursor: pointer;
+        }
+    }
+}
