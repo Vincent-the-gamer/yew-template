@@ -1,6 +1,6 @@
-<p style="width: fit-content; margin: 0 auto;">
+<div align="center">
   <img src=".github/logo.gif" width="90px"/>
-</p>
+</div>
 <h1 align="center">Yew Template</h1>
 <p align="center">A custom template for Yew.rs</p>
 
@@ -12,8 +12,7 @@ Official Site: [https://yew.rs/](https://yew.rs/)
 ## What I use this to do ?
 😺I wanna try to write web app frontend without `JavaScript` or `TypeScript`.😺
 
-
-## What's Required
+## What are Required
 1. Rust programming environment.
 2. Trunk
 ~~~shell
@@ -25,12 +24,12 @@ rustup target install wasm-unknown-unknown
 ~~~
 
 ## Features
-* Stylesheet: scss ✅
-* 😁You won't even write one line of JavaScript. 😁 ✅
-* Pre-configuration of some general tools:
-    * css/scss compiler
-    * features of `Cargo.toml` dependencies
-    * auto copy static assets
+* ✅Stylesheet: scss 
+* ✅😁You won't even write one line of JavaScript. 😁 
+* ✅Pre-configuration of some general tools:
+    * ✅css/scss compiler
+    * ✅features of `Cargo.toml` dependencies
+    * ✅auto copy static assets
 
 
 ## Development
@@ -43,6 +42,12 @@ Deploy a wasm app is same as you deploy a webpage. You may use `Github Pages` , 
 
 ### Build
 You can set custom `public_url` for Github Pages in `Trunk.toml`.
+Remember change `release = false` to `true`
 ~~~shell
 trunk build --release
+~~~
+
+Or directly use shell command
+~~~shell
+trunk build --release --public-url /your-github-repo-name/
 ~~~
