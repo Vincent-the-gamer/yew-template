@@ -12,24 +12,25 @@ Official Site: [https://yew.rs/](https://yew.rs/)
 ## What I use this to do ?
 😺I wanna try to write web app frontend without `JavaScript` or `TypeScript`.😺
 
-## What are Required
+## What are required ?
 1. Rust programming environment.
 2. Trunk
 ~~~shell
 cargo install trunk
 ~~~
-3.Install rustup target: `wasm-unknown-unknown`
+
+3. Install rustup target: `wasm-unknown-unknown`
 ~~~shell
 rustup target install wasm-unknown-unknown
 ~~~
 
 ## Features
-* ✅Stylesheet: scss 
-* ✅😁You won't even write one line of JavaScript. 😁 
-* ✅Pre-configuration of some general tools:
-    * ✅css/scss compiler
-    * ✅features of `Cargo.toml` dependencies
-    * ✅auto copy static assets
+* ✅ Stylesheet: scss 
+* ✅ 😁You won't even write one line of JavaScript. 😁 
+* ✅ Pre-configuration of some general tools:
+    * ✅ CSS/SCSS compiler
+    * ✅ features of `Cargo.toml` dependencies
+    * ✅ auto copy static assets
 
 
 ## Development
