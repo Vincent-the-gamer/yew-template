@@ -9,10 +9,31 @@
 
 Official Site: [https://yew.rs/](https://yew.rs/)
 
+## Notice
+`wasm-bindgen` is required when you run `trunk serve`，if you are in trouble downloading this module, please download it manually.
+
+### Manually install `wasm-bindgen`
+1. Download: [https://github.com/rustwasm/wasm-bindgen](https://github.com/rustwasm/wasm-bindgen)
+2. Unzip it and rename the folder: wasm-bindgen-{version}
+3. Place it into cache folder
+   - Windows:
+     ~~~
+     Place wasm-bindgen-{version} into
+     C:\Users\{username}\AppData\Local\trunkrs\trunk\cache
+     ~~~
+   - macOS:
+     ~~~shell
+      # Place wasm-bindgen-{version} into
+      # /Users/{username}/Library/Caches/dev.trunkrs.trunk
+      # You may encounter a warning when trunk try to invoke wasm-bindgen, please run the following command.
+      xattr -d com.apple.quarantine wasm-bindgen--{version}
+     ~~~
+4. Run `trunk serve`
+
 ## What I use this to do ?
 😺I wanna try to write web app frontend without `JavaScript` or `TypeScript`.😺
 
-## What are required ?
+## You need to install
 1. Rust programming environment.
 2. Trunk
 ~~~shell
