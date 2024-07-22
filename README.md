@@ -22,11 +22,16 @@ Official Site: [https://yew.rs/](https://yew.rs/)
      C:\Users\{username}\AppData\Local\trunkrs\trunk\cache
      ~~~
    - macOS:
+
+     Place wasm-bindgen-{version} into:
+     ~~~
+      /Users/{username}/Library/Caches/dev.trunkrs.trunk
+     ~~~
+
+      You may encounter a warning when trunk try to invoke wasm-bindgen, please run the following command.
+
      ~~~shell
-      # Place wasm-bindgen-{version} into
-      # /Users/{username}/Library/Caches/dev.trunkrs.trunk
-      # You may encounter a warning when trunk try to invoke wasm-bindgen, please run the following command.
-      xattr -d com.apple.quarantine wasm-bindgen--{version}
+     xattr -d com.apple.quarantine wasm-bindgen-{version}
      ~~~
 4. Run `trunk serve`
 
@@ -58,6 +63,21 @@ rustup target install wasm-unknown-unknown
 Yew.rs is friendly if you can use `React.js` or `Solid.js`, I'd like to call this framework: `React.rs`. 😻
 
 Development docs: [https://yew.rs/docs/getting-started/introduction](https://yew.rs/docs/getting-started/introduction)
+
+## Update Deps
+1. Install cargo-edit globally.
+
+```shell
+cargo install cargo-edit --features vendored-openssl
+```
+
+2. Run `cargo upgrade`.
+
+```shell
+cargo upgrade
+```
+
+P.S. Check your global cargo packs with `cargo install --list`.
 
 ## Deploy
 Deploy a wasm app is same as you deploy a webpage. You may use `Github Pages` , `Node.js + Express`，`nginx` and etc.

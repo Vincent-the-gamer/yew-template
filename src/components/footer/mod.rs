@@ -11,7 +11,7 @@ pub fn footer() -> Html {
     html!{
         <div class={stylesheet}>
           <footer>
-            <h3>{"v1.0.0 | Vincent-the-gamer @2023-present"}</h3>
+            <h3>{"v1.0.1 | Vincent-the-gamer @2023-present"}</h3>
           </footer>
         </div>
     }
