@@ -45,9 +45,9 @@ Official Site: [https://yew.rs/](https://yew.rs/)
 cargo install trunk
 ~~~
 
-3. Install rustup target: `wasm-unknown-unknown`
+3. Install rustup target: `wasm32-unknown-unknown`
 ~~~shell
-rustup target install wasm-unknown-unknown
+rustup target install wasm32-unknown-unknown
 ~~~
 
 ## Features
